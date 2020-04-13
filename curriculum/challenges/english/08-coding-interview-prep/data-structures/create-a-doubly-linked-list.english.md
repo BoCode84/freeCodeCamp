@@ -111,7 +111,63 @@ DoublyLinkedList.prototype = Object.assign(
 <section id='solution'>
 
 ```js
-// solution required
+var Node = function(data, prev) {
+	this.data = data;
+	this.prev = prev;
+	this.next = null;
+};
+var DoublyLinkedList = function() {
+	this.head = null;
+	this.tail = null;
+
+	this.add = function(data) {
+		if (!this.head) {
+			this.head = new Node(data, null);
+			this.tail = this.head;
+			return;
+		}
+		let node = new Node(data, this.tail);
+		this.tail.next = node;
+		this.tail = node;
+		this.tail.next = null;
+	}
+
+	this.remove = function(data) {
+		// Empty list.
+		if (!this.head) {
+			return null;
+		}
+		// Removing the head.
+		let currentNode = this.head;
+		if (data === currentNode.data) {
+			this.head = currentNode.next;
+			currentNode.prev = null;
+			return;
+		}
+		let prevNode;
+		while (currentNode) {
+			if (currentNode.data === data) {
+				prevNode.next = currentNode.next;
+				if (currentNode.next) {
+					currentNode.next.prev = prevNode;
+				}
+				
+			}
+			prevNode = currentNode;
+			currentNode = currentNode.next;
+		}
+	}
+};
+
+let ll = new DoublyLinkedList();
+ll.add(1);
+ll.add(3);
+ll.add(2);
+ll.add(3);
+ll.add(4);
+ll.add(3);
+ll.remove(3);
+console.log(ll.head);
 ```
 
 </section>

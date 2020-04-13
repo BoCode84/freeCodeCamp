@@ -69,7 +69,76 @@ var Trie = function() {
 <section id='solution'>
 
 ```js
-// solution required
+var displayTree = tree => console.log(JSON.stringify(tree, null, 2));
+var Node = function() {
+	this.keys = new Map();
+	this.end = false;
+	this.setEnd = function() {
+		this.end = true;
+	};
+	this.isEnd = function() {
+		return this.end;
+	};
+};
+var Trie = function() {
+	this.root = new Node();
+
+	this.add = function(word, node = this.root) {
+		if (word.length === 0) {
+			node.setEnd();
+			return;
+		}
+		if (!node.keys.get(word[0])) {
+			node.keys.set(word[0], new Node());
+			return this.add(word.substr(1), node.keys.get(word[0]));
+		} else {
+			return this.add(word.substr(1), node.keys.get(word[0]));
+		}
+	};
+
+	// Boolean if word exists.
+	this.isWord = function(word, node = this.root) {
+		if (word.length === 0) {
+			return node.end;
+		}
+		if (node.keys.get(word[0])) {
+			return this.isWord(word.substr(1), node.keys.get(word[0]));
+		}
+		return false;
+	};
+
+	// Array of words.
+	this.print = function() {
+		let words = [];
+		function traverse(node = this.root, word = "") {
+			// Base.
+			if (node.keys.size === 0) {
+				return node.isEnd() ? words.push(word) : undefined;
+			}
+
+			// Recurring case.
+			if (node.keys.size) {
+				for (let letter of node.keys.keys()) {
+					traverse(node.keys.get(letter), word.concat(letter));
+				}
+				if (node.isEnd()) words.push(word);
+			}
+		}
+		traverse(this.root);
+		return words;
+	};
+};
+
+let myTrie = new Trie();
+myTrie.add('ball');
+myTrie.add('bat');
+myTrie.add('doll');
+myTrie.add('dork');
+myTrie.add('do');
+myTrie.add('dorm');
+myTrie.add('send');
+myTrie.add('sense');
+console.log(myTrie.print());
 ```
 
 </section>

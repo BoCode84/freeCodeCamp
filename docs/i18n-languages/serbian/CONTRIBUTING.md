@@ -9,9 +9,9 @@
 
 freeCodeCamp.org је могућ захваљујући хиљадама љубазних волонтера попут вас. Захвални смо на вашем доприносу и радујемо вам што смо вас дочекали.
 
-We strictly enforce our ["Code of Conduct"](https://www.freecodecamp.org/code-of-conduct). Please take a moment to read it. It takes only two minutes to read.
+Строго спроводимо наш ["Кодекс понашања"](https://www.freecodecamp.org/code-of-conduct). Молим вас, одвојите тренутак да га прочитате. Требаће вам само две минуте. 
 
-Happy contributing.
+Срећан допринос.
 
 ## Here are some fun ways that you can help
 

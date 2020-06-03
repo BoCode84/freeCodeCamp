@@ -9,15 +9,15 @@
 
 freeCodeCamp.org је могућ захваљујући хиљадама љубазних волонтера попут вас. Захвални смо на вашем доприносу и радујемо вам што смо вас дочекали.
 
-Строго спроводимо наш ["Кодекс понашања"](https://www.freecodecamp.org/code-of-conduct). Молим вас, одвојите тренутак да га прочитате. Требаће вам само две минуте. 
+Строго спроводимо наш ["Кодекс понашања"](https://www.freecodecamp.org/code-of-conduct). Молимо вас, одвојите тренутак да га прочитате. Требаће вам само две минуте. 
 
 Срећан допринос.
 
-## Here are some fun ways that you can help
+## Ево неколико забавних начина на које можете помоћи
 
-You can contribute to any of these:
+Можете допринети на следећи начин:
 
-1. [Contribute to this open-source codebase](#contribute-to-this-open-source-codebase). Help us edit coding challenges, or fix bugs on the learning platform.
+1. [Допринесите овој бази отворених кодова](#contribute-to-this-open-source-codebase). Помозите нам да уредимо изазове кодирања или исправимо грешке на платформи за учење.
 
 2. Help campers on our [public forum](https://www.freecodecamp.org/forum/). [Answer their coding questions](https://www.freecodecamp.org/forum/?max_posts=1) or [give them feedback on their coding projects](https://www.freecodecamp.org/forum/c/project-feedback?max_posts=1).
 

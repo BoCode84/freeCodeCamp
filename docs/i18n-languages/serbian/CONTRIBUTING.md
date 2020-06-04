@@ -19,7 +19,7 @@ freeCodeCamp.org је могућ захваљујући хиљадама љуб�
 
 1. [Допринесите овој бази отворених кодова](#contribute-to-this-open-source-codebase). Помозите нам да уредимо изазове кодирања или исправимо грешке на платформи за учење.
 
-2. Help campers on our [public forum](https://www.freecodecamp.org/forum/). [Answer their coding questions](https://www.freecodecamp.org/forum/?max_posts=1) or [give them feedback on their coding projects](https://www.freecodecamp.org/forum/c/project-feedback?max_posts=1).
+2. Помозите камперима на нашем [јавном форуму](https://www.freecodecamp.org/forum/). [Одговорите на њихова питања о кодирању](https://www.freecodecamp.org/forum/?max_posts=1) или [дајте своје стручно мишљење о њиховим пројектима](https://www.freecodecamp.org/forum/c/project-feedback?max_posts=1).
 
 3. Help us add subtitles (closed captions) to our [YouTube channel videos](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ/videos).
 
